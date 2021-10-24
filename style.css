@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    margin-top: 0.5rem;
+   
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+
+body {
+    background-color: #dcdcdc;
+}
+
+/* this is the big container */
+.container{
+    position: absolute;
+    left: 50%;
+    /* 移动整体到中间 */
+    transform: translate(-50%);
+    width: 600px;
+    height: 520px;
+    top: 9rem;
+    background: rgb(255, 151, 53);
+    border: 2px solid black;
+    padding: .5rem;
+    /* box-shadow: 5px 10px #888888; */
+
+}
+
+/* each slot */
+.container table tr td{
+    width: 90px;
+    height: 80px;
+    border: 2px solid rgb(66, 147, 59);
+    border-radius: 35%;
+    background-color: rgb(255, 255, 255);
+    /* 光标变成小手手 */
+    cursor: pointer;
+}
+
+
+.reset{
+    position: absolute;
+    top:35rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    padding: 0.3rem;
+    border: 1px solid black;
+    background: #ffffff;
+    cursor: pointer;
+    /* box-shadow: 6px 5px #888888; */
+    transition: .5s;
+}
+
+.reset:hover{
+transition: 0.8s;
+box-shadow: 0px 0px #888888;
+}
+
+.player-turn{
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(87, 87, 87);
+}
